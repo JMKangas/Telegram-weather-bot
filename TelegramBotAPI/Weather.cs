@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace TelegramBotAPI
 {
-
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     public partial class Weather
     {
         [JsonPropertyName("latitude")]
@@ -36,6 +36,7 @@ namespace TelegramBotAPI
 
         [JsonPropertyName("temperature_2m")]
         public string Temperature2M { get; set; }
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     }
 
     public partial class Weather
