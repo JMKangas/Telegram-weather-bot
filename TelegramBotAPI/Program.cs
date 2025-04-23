@@ -1,4 +1,6 @@
 
+using TelegramBotAPI.Services;
+
 namespace TelegramBotAPI
 {
     public class Program
@@ -13,9 +15,12 @@ namespace TelegramBotAPI
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
+            builder.Services.AddHttpClient();
+            builder.Services.AddScoped<WeatherService>();
+            builder.Services.AddScoped<TelegramBotAPI.TelegramBot.Bot>();
+
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
@@ -28,6 +33,8 @@ namespace TelegramBotAPI
 
             app.MapControllers();
 
+            var scope = app.Services.CreateScope();
+            var bot = scope.ServiceProvider.GetRequiredService<TelegramBotAPI.TelegramBot.Bot>();
             app.Run();
         }
     }
