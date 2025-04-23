@@ -32,12 +32,10 @@ Follow these steps to set up and run the Telegram weather bot.
 Clone this repository
 
 git clone https://github.com/JMKangas/Telegram-weather-bot
-cd Telegram-weather-bot
 
 Add your Telegram Bot Token
 
 Place your token inside appsettings.Development.json:
-
 {
   "TelegramBot": {
     "Token": "YOUR_TELEGRAM_BOT_TOKEN"
@@ -89,6 +87,7 @@ You can also get the current weather directly via a browser:
 https://localhost:7281/api/weather
 
 This will return a string of the current weather for Jyväskylä. Make sure to check which port the application is listening to.
+
 📦 Technologies Used
 
     .NET 9 Web API
