@@ -1,6 +1,6 @@
 🌤️ Jyväskylä Weather Telegram Bot
 
-A simple and efficient Telegram bot built with .NET 9 Web API that provides current weather, hourly forecast, and daily average for the city of Jyväskylä, Finland.
+A simple and efficient Telegram bot built with .NET 9 Web API that provides current weather, hourly forecast, and daily average for the city of Jyväskylä, Finland into your cross-platform Telegram application.
 🚀 Features
 
     🔸 Get the current weather in Jyväskylä
@@ -103,3 +103,5 @@ This will return a string of the current weather for Jyväskylä. Make sure to c
 
 This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
 See the LICENSE file for more details.
+
+https://telegram.org/
