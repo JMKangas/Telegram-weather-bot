@@ -84,6 +84,8 @@ Keskiarvo	Shows today’s average temperature
 
     🔤 Commands are case-insensitive
 
+![Image Alt](https://github.com/JMKangas/Telegram-weather-bot/blob/f84d599355fb01f10fedc13fc2f7ed71a6a9123c/using_bot.png)
+
 🌐 Web API Access
 
 You can also get the current weather directly via a browser:
