@@ -13,8 +13,16 @@ namespace TelegramBotAPI.TelegramBot
 
         public Bot(WeatherService weatherService)
         {
+
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
+                .Build();
+
+
             _weatherService = weatherService;
-            _botClient = new TelegramBotClient("1234567890"); //HOX!! Add your own api token as string parameter!!
+            var token = configuration["TelegramBot:Token"];
+            _botClient = new TelegramBotClient(token); //HOX!! Add your own api token as parameter or place it in appsettings.Development.json
             _botClient.StartReceiving(UpdateHandler, ErrorHandler);
         }
 
