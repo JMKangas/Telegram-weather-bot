@@ -29,36 +29,36 @@ Follow these steps to set up and run the Telegram weather bot.
     BotFather will give you a Bot Token — copy it for the next step.
 
 2. 🧪 Configure and Run the Bot
-    
-    Clone this repository
-    
-    git clone https://github.com/JMKangas/Telegram-weather-bot
-    
-    Add your Telegram Bot Token
-    
-    Place your token inside appsettings.Development.json:
-    
-    {
-      "TelegramBot": {
-        "Token": "YOUR_TELEGRAM_BOT_TOKEN"
-      }
-    }
-    
-    ✅ Or alternatively, set it as an environment variable:
-    
-    export TelegramBot__Token=YOUR_TELEGRAM_BOT_TOKEN
-    
-    Your bot constructor should load the token like this:
-    
-    var configuration = new ConfigurationBuilder()
-        .SetBasePath(Directory.GetCurrentDirectory())
-        .AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
-        .Build();
-    
-    var token = configuration["TelegramBot:Token"];
-    var _botClient = new TelegramBotClient(token);
+Clone this repository
 
-    ℹ️ Make sure the appsettings.Development.json file is set to "Copy if newer" in file properties.
+git clone https://github.com/JMKangas/Telegram-weather-bot
+cd Telegram-weather-bot
+
+Add your Telegram Bot Token
+
+Place your token inside appsettings.Development.json:
+
+{
+  "TelegramBot": {
+    "Token": "YOUR_TELEGRAM_BOT_TOKEN"
+  }
+}
+
+    ✅ Alternatively, you can set it as an environment variable:
+
+export TelegramBot__Token=YOUR_TELEGRAM_BOT_TOKEN
+
+Your bot constructor should load the token like this:
+
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
+    .Build();
+
+var token = configuration["TelegramBot:Token"];
+var _botClient = new TelegramBotClient(token);
+
+    ℹ️ Make sure the appsettings.Development.json file is set to "Copy if newer" in its properties.
 
 Run the bot
 
@@ -84,11 +84,11 @@ Keskiarvo	Shows today’s average temperature
 
 🌐 Web API Access
 
-You can also get current weather directly via a browser:
+You can also get the current weather directly via a browser:
 
-  https://localhost:7281/api/weather
+https://localhost:7281/api/weather
 
-This returns a string of current weather for Jyväskylä. Check which port is being listened.
+This will return a string of the current weather for Jyväskylä. Make sure to check which port the application is listening to.
 📦 Technologies Used
 
     .NET 9 Web API
