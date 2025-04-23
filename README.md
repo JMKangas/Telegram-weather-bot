@@ -66,9 +66,7 @@ Once your bot is live:
     Use the following commands:
 
 
-Command	Description
-
-Command description:
+Command Description:
 
     Lämpötila	Shows current weather in Jyväskylä
 
