@@ -50,18 +50,6 @@ Place your token inside appsettings.Development.json:
 
 export TelegramBot__Token=YOUR_TELEGRAM_BOT_TOKEN
 
-Your bot constructor should load the token like this:
-
-var configuration = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
-    .Build();
-
-var token = configuration["TelegramBot:Token"];
-var _botClient = new TelegramBotClient(token);
-
-    ℹ️ Make sure the appsettings.Development.json file is set to "Copy if newer" in its properties.
-
 Run the bot
 
 dotnet run
@@ -77,12 +65,15 @@ Once your bot is live:
 
     Use the following commands:
 
+
 Command	Description
 Lämpötila	Shows current weather in Jyväskylä
 Ennuste 2	Shows forecast for two hours ahead
 Keskiarvo	Shows today’s average temperature
 
     🔤 Commands are case-insensitive
+    
+
 
 ![Image Alt](https://github.com/JMKangas/Telegram-weather-bot/blob/f84d599355fb01f10fedc13fc2f7ed71a6a9123c/using_bot.png)
 
@@ -93,6 +84,7 @@ You can also get the current weather directly via a browser:
 https://localhost:7281/api/weather
 
 This will return a string of the current weather for Jyväskylä. Make sure to check which port the application is listening to.
+![Image Alt](https://github.com/JMKangas/Telegram-weather-bot/blob/9c73c414ac57ce2dec6da5eda0faa20269ea1071/listening_localhost.png)
 
 📦 Technologies Used
 
