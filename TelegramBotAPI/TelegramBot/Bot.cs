@@ -14,7 +14,7 @@ namespace TelegramBotAPI.TelegramBot
         public Bot(WeatherService weatherService)
         {
             _weatherService = weatherService;
-            _botClient = new TelegramBotClient("7846635882:AAF9kdOwsLbk2s9Tbf4aeRjFhhOZ50h-GZg");
+            _botClient = new TelegramBotClient("1234567890"); //HOX!! Add your own api token as string parameter!!
             _botClient.StartReceiving(UpdateHandler, ErrorHandler);
         }
 
