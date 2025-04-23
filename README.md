@@ -27,6 +27,8 @@ Follow these steps to set up and run the Telegram weather bot.
         Name your bot (e.g., Jyväskylä Weather Bot)
 
         Choose a username ending with bot (e.g., jyvaskyla_weather_bot)
+        
+![Image Alt](https://github.com/JMKangas/Telegram-weather-bot/blob/d2c0e97a82d00ad2c49a12007cbadec5df082870/setting_up_bot.png)
 
     BotFather will give you a Bot Token — copy it for the next step.
 
