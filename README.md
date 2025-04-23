@@ -29,6 +29,7 @@ Follow these steps to set up and run the Telegram weather bot.
     BotFather will give you a Bot Token — copy it for the next step.
 
 2. 🧪 Configure and Run the Bot
+
 Clone this repository
 
 git clone https://github.com/JMKangas/Telegram-weather-bot
