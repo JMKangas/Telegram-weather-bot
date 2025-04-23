@@ -18,6 +18,8 @@ Follow these steps to set up and run the Telegram weather bot.
 
     Open Telegram and search for @BotFather
 
+![Image Alt](https://github.com/JMKangas/Telegram-weather-bot/blob/73195048f0df7a4d1abbd08a3d90691d7e07bb53/start.png)
+
     Start a chat and run the command /newbot
 
     Follow the prompts:
