@@ -67,9 +67,14 @@ Once your bot is live:
 
 
 Command	Description
-Lämpötila	Shows current weather in Jyväskylä
-Ennuste 2	Shows forecast for two hours ahead
-Keskiarvo	Shows today’s average temperature
+
+Command description:
+
+    Lämpötila	Shows current weather in Jyväskylä
+
+    Ennuste 2	Shows forecast for two hours ahead
+
+    Keskiarvo	Shows today’s average temperature
 
     🔤 Commands are case-insensitive
     
